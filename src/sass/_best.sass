@@ -1,0 +1,125 @@
+.best
+	padding-bottom: 30px
+	.bs__part
+		width: 125px
+	.section__title
+		padding-top: 40px
+	&__list
+		position: relative
+		display: flex
+		align-items: flex-start
+	&__item
+		margin: 0
+		text-align: center
+		min-height: 532px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&__content
+		display: flex
+		flex-direction: column
+		align-items: space-between
+	&__image
+		padding: 30px 0
+		margin-bottom: 20px
+		min-height: 350px
+		background-color: $bg-color--grey
+		cursor: pointer
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			.bs__wrap
+				transform: translate3d(-50%, 0px, 0px)
+	&__img
+		width: 100%
+		height: auto
+		display: block
+		object-fit: cover
+	&__title
+		font-size: 17px
+		font-weight: bold
+		&_big
+			min-height: 46px
+			display: flex
+			align-items: center
+			justify-content: center
+	&__price
+		font-family: $font-playfair
+		font-size: 20px
+		font-weight: bold
+		color: $primary-color
+	&__descr
+		padding-top: 5px
+		font-size: 14px
+		font-weight: 400
+		line-height: 25px
+		min-height: unset
+	&__colors
+		padding-top: 10px
+		display: flex
+		align-items: center
+		justify-content: center
+		font-size: 14px
+		font-weight: 300
+		line-height: 25px
+		&-title
+		&-list
+			display: flex
+			justify-content: space-between
+			align-items: center
+		.active
+			border: 1px solid $text-black-color
+	&__color
+		margin-left: 14px
+		width: 24px
+		height: 24px
+		background-color: #69645e
+		border-radius: 50%
+		border: 1px solid transparent
+		transition: border-color 0.15s ease-in-out
+	&__action
+		margin-top: 30px
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+	&__link
+		padding: 12px 34px
+		background-color: $primary-color
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		border-radius: 2px
+		transition: background-color 0.3s ease-in-out
+		&::before
+			content: ''
+			width: 13px
+			height: 13px
+			position: absolute
+			top: 50%
+			right: 20px
+			transform: translateY(-50%)
+			background: url(../img/arrow_link.svg) no-repeat center center
+			background-size: cover
+			transition: background-color 0.3s ease-in-out
+		&-text
+			margin-right: 14px
+			text-transform: uppercase
+			font-weight: bold
+			text-align: center
+			display: flex
+			justify-content: center
+			align-items: center
+			color: $white
+
+.color
+	&-sand
+		background-color: #f3dbc3
+	&-dark-wood
+		background-color: #423027
+	&-silver
+		background-color: #f1eff5
+	&-dirt
+		background-color: #69645e

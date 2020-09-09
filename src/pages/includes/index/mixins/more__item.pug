@@ -1,0 +1,15 @@
+mixin more__item(title, text, img)
+	.more__item
+		.bs-l
+			.bs__container
+				.bs__wrap
+
+					.bs__item
+						.more__bs-text #{text}
+
+					.bs__item
+						.more__wrap
+							.more__image
+								svg(class="more__svg")
+									use(xlink:href="img/sprite.svg#" + img)
+							.more__text #{title}

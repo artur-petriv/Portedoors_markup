@@ -1,0 +1,16 @@
+mixin main__item(name, price, img)
+	.main__item
+		.main__parts
+			.main__part.main__part-first
+				.main__left
+					.main__content
+						h2.main__title — Special Offer, Doors «#{name}» from #{price}$
+						.main__list
+							.main__li Low price, limited quantity in stock
+							.main__li Offer available until 
+								span.expire
+						.main__button.button_c.btn Redeem
+			.main__part
+				.main__right
+					.main__image
+						img.main__img(src=img alt=name)

@@ -1,0 +1,192 @@
+extends common/layout.pug
+
+block content
+	//- Main
+	main.main
+		.bar
+			.bar-wrap
+				.bar__title Modern interior doors from Europe
+		.main__galerry.owl-carousel.owl-main
+
+			include includes/index/mixins/main__item.pug
+
+			+main__item('Standart', '60', 'img/header__01.jpg')
+			+main__item('Eva', '100', 'img/header__02.jpg')
+			+main__item('Domino', '230', 'img/header__03.jpg')
+
+	//- Advantage
+	section.advantage#adv
+		.container
+			.section__head
+				h3.section__title Our advantages
+			.advantage__list.owl-carousel.owl-adv
+
+				include includes/index/mixins/advantage__item.pug
+
+				+advantage__item('100% Best Price', 'money', 'Most competitive prices in eastern Canada')
+				+advantage__item('High Quality', 'quality', 'Made in Europe, with the highest quality standards of technology and materials.')
+				+advantage__item('Warranty', 'warranty', '18 months of warranty for all products.')
+				+advantage__item('Special Offer', 'special', 'Visit our showroom and get a discount.')
+				+advantage__item('Services', 'services', 'High quality installation service with 18 months warranty.')
+
+
+	//- Best
+	section.best
+		.container.container__slide#container
+			.section__head
+				h3.section__title
+			.best__list.owl-carousel.owl-best
+
+				include includes/index/mixins/best__item.pug
+
+				+best__item('Alta', '135', 'Material: Wood + MDF + Acoustic Filler', 'img/items_01_1.jpg', 'img/items_01_1.jpg', 'sand')
+				+best__item('Vera', '90', 'Material: Wood + MDF + Acoustic Filler', 'img/items_02_2.png', 'img/items_02_2.png', 'silver')
+				+best__item('Standart', '60', 'Material: Wood + MDF + Acoustic Filler', 'img/items_03_1.jpg', 'img/items_03_2.jpg', 'dark-wood', 'silver')
+				+best__item('Kamea', '90', 'Material: Wood + MDF + Acoustic Filler', 'img/items_04_1.jpg', 'img/items_04_1.jpg', 'silver')
+				+best__item('Office', '90', 'Material: Wood + MDF + Acoustic Filler', 'img/items_05_1.jpg', 'img/items_05_2.jpg', 'sand', 'dirt')
+				+best__item('Gloria', '80', 'Material: Wood + MDF + Acoustic Filler', 'img/items_06_1.jpg', 'img/items_06_1.jpg', 'sand', 'silver')
+				+best__item('Alta with dark glass', '160', 'Material: Wood + MDF + Acoustic Filler', 'img/items_07_1.jpg', 'img/items_07_1.jpg', 'dirt')
+				+best__item('Eva', '100', 'Material: Wood + MDF + Acoustic Filler', 'img/items_08_1.jpg', 'img/items_08_2.jpg', 'silver', 'dark-wood')
+				+best__item('Domino', '230', 'Material: solid wood + MDF', 'img/items_09_1.jpg', 'img/items_09_2.jpg', 'dirt', 'sand')
+				+best__item('Domino without glass', '230', 'Material: solid wood + MDF', 'img/items_09_1.jpg', 'img/items_09_2.jpg', 'sand', 'dirt')
+
+
+	//- Frame
+	section.frame
+		.container.container__slide
+			.section__head
+				h3.section__title Door frame, parts, hardware
+			.best__list.owl-carousel.owl-hardware#frame__list
+
+				include includes/index/mixins/frame__item.pug
+
+				+frame__item('Door frame system', '130', 'molding and hinges included', 'img/frames_01_1.jpg', 'img/frames_01_2.jpg', 'sand', 'dark-wood', 'silver')
+				+frame__item('Door frame system', '130', 'molding and hinges included', 'img/frames_02_1.jpg', 'img/frames_02_2.jpg', 'sand', 'dark-wood', 'silver')
+				+frame__item('Extensions for very thick walls', '70', 'set for 1 door', 'img/frames_03_1.jpg', 'img/frames_03_2.jpg', 'sand', 'dirt', 'silver')
+				+frame__item('No mortise hinges', '15', 'set of 2 hinges', 'img/frames_01_1.jpg', 'img/frames_01_2.jpg', 'sand', 'dirt', 'silver')
+
+
+	//- Doors
+	section.doors
+		.bar
+			.bar-wrap
+				h3.bar__title Get a good offer
+				a.bar__link.btn
+					span.bar__text Details
+					+icon('arrow', 'bar__svg')
+
+		.section__head
+			h3.section__title Door frame, parts, hardware
+
+		.container
+			.doors__slider.owl-carousel.owl-frame
+				include includes/index/mixins/doors__item.pug
+
+				.doors__list
+					.doors__box
+						+doors__item('img/doors_01.jpg', '80')
+						+doors__item('img/doors_02.jpg', '100')
+						+doors__item('img/doors_03.jpg', '160')
+						+doors__item('img/doors_04.jpg', '90')
+
+				.doors__list
+					.doors__box
+						+doors__item('img/doors_05.jpg', '230')
+						+doors__item('img/doors_07.jpg', '60')
+						+doors__item('img/doors_001.jpg', '90')
+						+doors__item('img/doors_002.jpg', '90')
+
+				.doors__list
+					.doors__box
+						+doors__item('img/doors_01.jpg', '80')
+						+doors__item('img/doors_001.jpg', '90')
+						+doors__item('img/doors_07.jpg', '60')
+						+doors__item('img/doors_05.jpg', '230')
+
+
+	//- Achievements
+	section.achi
+		.container.container__slide
+			.section__head
+				h3.section__title Our achievements
+
+			.achi__list.owl-carousel.owl-achi#achi
+				include includes/index/mixins/achi__item.pug
+
+				+achi__item('img/achi_01.jpg', 'img/achi_01.jpg', 'img/achi_01.jpg')
+				+achi__item('img/achi_s_02.jpg', 'img/achi_s_02.jpg', 'img/achi_s_02.jpg')
+				+achi__item('img/achi_s_03.jpg', 'img/achi_s_03.jpg', 'img/achi_03.jpg')
+				+achi__item('img/achi_s_04.jpg', 'img/achi_s_04.jpg', 'img/achi_04.jpg')
+				+achi__item('img/achi_s_05.jpg', 'img/achi_s_05.jpg', 'img/achi_05.jpg')
+				+achi__item('img/achi_s_06.jpg', 'img/achi_s_06.jpg', 'img/achi_06.jpg')
+				+achi__item('img/achi_s_07.jpg', 'img/achi_s_07.jpg', 'img/achi_07.jpg')
+				+achi__item('img/achi_s_08.jpg', 'img/achi_s_08.jpg', 'img/achi_08.jpg')
+				+achi__item('img/achi_s_09.jpg', 'img/achi_s_09.jpg', 'img/achi_d_09.jpg')
+				+achi__item('img/achi_s_09.jpg', 'img/achi_s_09.jpg', 'img/achi_d_09.jpg')
+				+achi__item('img/achi_s_10.jpg', 'img/achi_s_10.jpg', 'img/achi_d_10.jpg')
+				+achi__item('img/achi_s_11.jpg', 'img/achi_s_11.jpg', 'img/achi_d_11.jpg')
+				+achi__item('img/achi_s_12.jpg', 'img/achi_s_12.jpg', 'img/achi_d_12.jpg')
+				+achi__item('img/achi_s_13.jpg', 'img/achi_s_13.jpg', 'img/achi_d_13.jpg')
+				+achi__item('img/achi_s_14.jpg', 'img/achi_s_14.jpg', 'img/achi_d_14.jpg')
+				+achi__item('img/achi_s_15.jpg', 'img/achi_s_15.jpg', 'img/achi_d_15.jpg')
+				+achi__item('img/achi_s_16.jpg', 'img/achi_s_16.jpg', 'img/achi_d_16.jpg')
+
+
+	//- More
+	section.more
+		.container
+			.more__list.owl-carousel.owl-more#more
+
+				include includes/index/mixins/more__item.pug
+
+				+more__item('Delivery from 0$', 'Possible free delivery from $1000 orders.', 'delivery')
+				+more__item('Ecological', 'All materials comply with environmental and safety standards.', 'eco')
+				+more__item('100 % Payment secure', 'We accept Visa, Mastercard, Interac, Cash.', 'secure')
+
+	//- Map
+	section.map
+		.bar
+			.bar-wrap
+				h3.bar__title Redeem exclusive offer
+				a.bar__link
+					span.bar__text.btn Details
+					+icon('arrow', 'bar__svg')
+
+		.container
+			.section__head
+				h3.section__title Find as on the map
+
+			.map__wrap
+				.map__frame#map
+				.map__info
+					.map__info-wrap
+						.map__info-container
+							.map__info-title Our adress:
+							.map__info-text 41 Chemin du Tremblay, Boucherville, QC J4B 7L6 Canada
+
+	//- Popup
+	.popup#popup
+		.popup__overlay
+			.popup__container
+				.popup__close-btn
+					+icon('close', 'popup__close-svg')
+				.popup__title Visit our showroom and we will pay taxes!
+				.popup__list
+					
+					.popup__item
+						.popup__text 100% best price
+
+					.popup__item
+						.popup__text Service 18 months
+					
+					.popup__item
+						.popup__text Warranty 18 months
+
+				form.popup__form#popup-form
+					input.popup__input(type='text' name='name' placeholder='Your name *' autofocus)
+					input.popup__input(type='tel' name='phone' placeholder='Phone *')
+					button.popup__button Get a discount
+
+block scripts
+	script(defer='' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBvt_XnVi4vJyFx1LhfRK_tm-5F3IPhOj0&language=en')
+	script(defer='' src='js/main.min.js')

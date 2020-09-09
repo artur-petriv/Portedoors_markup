@@ -1,0 +1,54 @@
+.more
+	padding-bottom: 50px
+	.container
+	&__list
+		padding: 0
+		display: flex
+		justify-content: center
+		align-items: center
+	&__item
+		padding: 30px 20px
+		margin: 20px 0
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		flex-basis: 100%
+		border: 1px solid $bg-color--grey
+		transition: all ease 0.5s
+		&:hover
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
+			border-color: transparent
+			.bs-l
+				.bs__wrap
+					transform: translate3d(50%, 0px, 0px)
+	&__svg
+		height: 60px
+		width: 60px
+		object-fit: contain
+	&__bs-text
+		text-align: center
+		font-size: 16px
+		display: flex
+		justify-content: center
+		align-items: center
+	&__wrap
+		display: flex
+		align-items: center
+		justify-content: center
+	&__image
+		text-align: center
+		display: flex
+		justify-content: flex-start
+		min-height: 60px
+	&__text
+		padding-left: 20px
+		max-width: 200px
+		display: flex
+		align-items: center
+		justify-content: center
+		min-height: 78px
+		font-size: 20px
+		line-height: 26px
+		text-align: center

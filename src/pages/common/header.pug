@@ -1,0 +1,21 @@
+header.header
+	.container
+
+		.header__part
+			a(href='/')
+				.header__logo
+					img.header__img(src='img/logo_black_s.png' srcset='img/logo_black_s.png 320w, img/logo_black.png 550w' alt='logo')
+
+		.header__part
+			.header__phone
+				a.header__phone-image(href='tel:14509002456')
+					+icon('phone', 'header__phone-svg')
+				.header__phone-number
+					a.header__phone-link(href='tel:14509002456') +1 - 450 - 900 - 2456
+			.header__working
+				.header__working-title Available 7 days
+				.header__working-text Visit only by appointment
+			.header__language
+				a.header__language-link(href='/') Fr
+
+

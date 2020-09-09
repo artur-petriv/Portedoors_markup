@@ -1,0 +1,26 @@
+mixin best__item(title, price, descr, img_1, img_2, ...colors)
+	.best__item
+				.best__image
+					.bs__container
+						.bs__wrap
+
+							.bs__item
+								.bs__part
+									img.best__img(src=img_1 alt='Item')
+
+							.bs__item
+								.bs__part
+									img.best__img.owl-lazy(data-src=img_2 alt='Item')
+
+				.best__content
+					.best__title #{title}
+					.best__price from #{price} $
+					.best__descr #{descr}
+					.best__colors
+						.best__colors-title Colors:
+						.best__colors-list
+							each color in colors
+								div(class="best__color" class="color-" + color)
+				.best__action
+					button.best__link.btn.button_c
+						span.best__link-text Get a discount

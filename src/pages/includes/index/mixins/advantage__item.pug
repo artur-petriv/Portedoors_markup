@@ -1,0 +1,18 @@
+mixin advantage__item(title, img, text)
+	.advantage__item
+		.bs-l
+			.bs__container
+				.bs__wrap
+
+					.bs__item
+						.more__bs-text #{text}
+
+					.bs__item
+						.advantage__wrap
+							.advantage__image
+								svg(class="advantage__svg")
+									use(xlink:href="img/sprite.svg#" + img)
+							.advantage__text #{title}
+
+
+							

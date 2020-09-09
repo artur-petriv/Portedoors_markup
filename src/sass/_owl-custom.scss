@@ -1,0 +1,117 @@
+.more__item {
+  position: relative;
+}
+.owl-carousel .owl-nav {
+  overflow: hidden;
+  height: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #2caae1;
+}
+
+.owl-carousel .item {
+  text-align: center;
+}
+.owl-carousel .nav-btn {
+  height: 44px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 50% !important;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.owl-carousel .prev-slide {
+  left: -33px;
+}
+.owl-carousel .next-slide {
+  right: -33px;
+}
+.owl-carousel .prev-slide:hover {
+  background-position: 0px -53px;
+}
+.owl-carousel .next-slide:hover {
+  background-position: -24px -53px;
+}
+
+span.img-text {
+  text-decoration: none;
+  outline: none;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  cursor: pointer;
+  width: 100%;
+  font-size: 23px;
+  display: block;
+  text-transform: capitalize;
+}
+span.img-text:hover {
+  color: #2caae1;
+}
+
+.owl-dots {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.owl-dot {
+  margin: 0 10px;
+  height: 14px;
+  width: 14px;
+  border: 1px solid #9a9a9a !important;
+  border-radius: 50%;
+  position: relative;
+  line-height: 0;
+  font-size: 0;
+  outline: none;
+  background-color: transparent;
+  transition: border 0.25s ease;
+}
+
+.owl-dot:hover {
+  border: 1px solid #424141 !important;
+}
+
+.owl-dots .active {
+  transition: all 0.25s ease;
+  border: 1px solid #424141 !important;
+}
+
+.owl-dots .active:after {
+  content: "";
+  height: 4px;
+  width: 4px;
+  background-color: #424141;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: all 0.15s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 1;
+}
+
+.best .owl-carousel .nav-btn {
+  top: 33% !important;
+}
+
+.frame .owl-carousel .nav-btn {
+  top: 30% !important;
+}

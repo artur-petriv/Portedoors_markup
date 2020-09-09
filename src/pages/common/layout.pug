@@ -1,0 +1,20 @@
+//- include svgSprite mixin
+include mixin-icon.pug
+
+doctype html
+html(lang='en')
+	block head
+		head
+			meta(charset='UTF-8')
+			meta(name='viewport', content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+			title Portedoor
+			link(rel='stylesheet', href='css/styles.min.css')
+	body.body
+
+		block header
+			include header
+		block content
+		block footer
+			include footer
+		block scripts
+			script(src='js/main.min.js')

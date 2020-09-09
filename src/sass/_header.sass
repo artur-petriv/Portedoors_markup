@@ -1,0 +1,85 @@
+.header
+	padding: 9px 0
+	width: 100%
+	background-color: $bg-color--grey
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 10
+	min-height: 64px
+	display: flex
+	align-items: center
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__part
+		display: flex
+		align-items: center
+	&__logo
+		display: flex
+		cursor: pointer
+		width: 100px
+	&__img
+		display: block
+		width: 100%
+		height: 100%
+		object-fit: cover
+	&__phone
+		margin-right: 40px
+		display: flex
+		align-items: center
+		&-image
+			margin-right: 14px
+			height: 42px
+			width: 42px
+			border-radius: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+			cursor: pointer
+			background-color: $phone-icon-color
+			transition: background-color 0.3s ease-in-out
+			&:hover
+				background-color: lighten($phone-icon-color, 4)
+		&-svg
+			height: 23px
+			width: 23px
+			fill: #fff
+		&-number
+		&-link
+			color: $text-black-color
+			font-weight: bold
+			font-size: 16px
+			transition: color 0.3s ease-in-out
+			&:hover
+				color: $button-hover-color
+	&__working
+		margin-right: 40px
+		&-title
+			font-size: 16px
+			letter-spacing: 0.4px
+			font-weight: normal
+		&-text
+			margin-top: 2px
+			font-size: 12px
+			letter-spacing: 0.1px
+			color: $primary-color
+	&__language
+		padding-right: 10px
+		display: flex
+		align-items: center
+		justify-content: center
+		&-link
+			padding: 8px 14px
+			background-color: $bg-color--grey
+			border-radius: 4px
+			font-size: 16px
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+			transition: box-shadow 0.3s ease-in-out
+			color: $text-black-color
+			&:hover
+				box-shadow: 0 0 10px rgba(160, 112, 82, 0.4)
+				color: inherit
+			&:visited
+				color: inherit

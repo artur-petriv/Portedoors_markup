@@ -1,0 +1,31 @@
+footer.footer
+	.container
+		.footer__container
+
+			.footer__first
+				.footer__logo
+					img.footer__logo-img(src='img/logo_white.png' alt='Logo white')
+					.footer__logo-descr Modern interior doors from Europe
+				.footer__call
+					.footer__call-title Call us:
+					.footer__call-info
+						a.footer__call-phone(href='tel:+14509002456') +1 - 450 - 900 - 2456
+						.footer__call-work
+							.footer__call-available Available 7 days
+							.footer__call-descr Visit only by appointment
+
+			.footer__offers
+				.footer__offers-title Exclusive Offers
+				.footer__offers-info
+					.footer__offers-text Sign up to receive exclusive offers and exciting product news
+					form.footer__offers-form(action='order.php' method='post' id='form-email')
+						input.footer__offers-email(type='email' name='email' placeholder='Enter your e-mail here...')
+						button.footer__offers-button(type='submit')
+							+icon('telegram', 'footer__telegram-svg')
+					.form-tg__error *Enter your e-mail address above
+
+			.footer__social
+				.footer__social-mail portedoor2000@gmail.com
+				.footer__social-address 41 Chemin du Tremblay,<br>Boucherville, QC J4B 7L6 Canada, Local 202
+				
+	.copyright © Copyright Porte&Door 2020

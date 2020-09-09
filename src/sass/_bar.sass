@@ -1,0 +1,59 @@
+.bar
+	padding: 15px 5px
+	position: relative
+	background-color: $primary-color
+	text-align: center
+	display: flex
+	justify-content: center
+	align-items: center
+	overflow: hidden
+	&-wrap
+		position: relative
+		font-size: 16px
+		font-weight: bold
+		color: $white
+		display: flex
+		justify-content: center
+		align-items: center
+		&::before, &::after
+			content: ''
+			position: absolute
+			top: 50%
+			max-width: 150px
+			width: 100%
+			height: 1px
+			background-color: $white
+		&::before
+			left: -200px
+		&::after
+			right: -200px
+	&__title
+		margin: 0
+		position: relative
+		color: $white
+		font-size: 16px
+		font-weight: bold
+		display: inline-block
+		letter-spacing: 1px
+	&__link
+		margin-left: 40px
+		display: flex
+		align-items: center
+		transition: color 0.15s ease-out
+		&:hover
+			.bar__text
+				color: #edc9a5
+			.bar__svg
+				fill: #edc9a5
+	&__text
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: bold
+		color: $details-color
+		transition: color 0.15s ease-in-out
+	&__svg
+		margin-left: 5px
+		height: 13px
+		width: 13px
+		fill: $details-color
+		transition: fill 0.15s ease-in-out

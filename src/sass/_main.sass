@@ -1,0 +1,127 @@
+.main
+	margin-top: 74px
+	padding-bottom: 20px
+	background-color: $bg-color--grey
+	.bar__title
+		font-size: 12px
+	&__gallery
+		padding: 40px 0 10px
+		width: 100%
+		max-width: 1850px
+		margin: 0 auto
+		position: relative
+	&__item
+		margin: 0 auto
+		max-width: 1850px
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+	&__parts
+		width: 100%
+		display: flex
+		justify-content: space-between
+	&__part
+		margin: 15px
+		flex-basis: 50%
+		flex-grow: 1
+		box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.2)
+		&--first
+	&__left
+		padding-bottom: 20px
+		height: 100%
+		width: 100%
+		background-color: $white
+		position: relative
+		overflow: hidden
+		display: flex
+		align-items: center
+		justify-content: center
+		z-index: 1
+		&::before, &::after
+			content: ''
+			height: 90%
+			width: 90%
+			border: 1px solid $border-main-color
+			position: absolute
+			top: 5%
+			left: 5%
+			z-index: -1
+		&::after
+			top: 4%
+			left: 6%
+	&__content
+		height: auto
+	&__title
+		margin: 0
+		max-width: 530px
+		font-family: $font-playfair
+		font-weight: bold
+		font-size: 45px
+		color: $primary-color
+		letter-spacing: 1px
+	&__list
+		margin-top: 20px
+		margin-bottom: 40px
+		padding-left: 30px
+	&__li
+		position: relative
+		font-size: 20px
+		letter-spacing: 1px
+		&::before
+			content: ''
+			margin-top: 1px
+			width: 5px
+			height: 5px
+			background-color: $text-black-color
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: -20px
+			border-radius: 50%
+	&__button
+		width: 215px
+		padding: 11px 20px
+		border-radius: 2px
+		font-size: 16px
+		color: $white
+		border: 0
+		background-color: $primary-color
+		position: relative
+		transition: background-color 0.3s ease-in-out
+		text-transform: uppercase
+		user-select: none
+		font-weight: bold
+		cursor: pointer
+		letter-spacing: 1px
+		text-align: center
+		&::before
+			content: ''
+			position: absolute
+			width: 13px
+			height: 13px
+			top: 50%
+			transform: translateY(-50%)
+			background: url(../img/arrow_link.svg) no-repeat center center
+			background-size: cover
+			right: 25px
+			transition: background-color 0.3s ease-in-out
+	&__right
+	&__image
+		display: flex
+		justify-content: center
+		align-items: center
+	&__img
+		width: 100%
+		height: auto
+		display: block
+		object-fit: cover
+	.bar__title
+		text-transform: uppercase
+
+
+.expire
+		font-size: 20px
+		font-weight: 600
+		color: $text-black-color
+		letter-spacing: 1px

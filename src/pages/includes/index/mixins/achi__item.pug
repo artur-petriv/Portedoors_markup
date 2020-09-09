@@ -1,0 +1,14 @@
+mixin achi__item(img_1, img_2, img_fancy)
+	.achi__item
+		a(href=img_fancy data-fancybox='achi-g')
+			.bs
+				.bs__container
+					.bs__wrap
+
+						.bs__item
+							.bs__part
+								img.bs__img(src=img_1 alt='Achievement Image')
+
+						.bs__item
+							.bs__part
+								img.bs__img.owl-lazy(data-src=img_2 alt='Achievement Image')
