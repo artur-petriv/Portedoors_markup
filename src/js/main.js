@@ -318,7 +318,7 @@ $(document).ready(function () {
             600: {
                 items: 3,
             },
-            750: {
+            800: {
                 items: 4,
             },
             1024: {
@@ -340,7 +340,7 @@ $(document).ready(function () {
                 margin: 20,
                 loop: !0,
             },
-            400: {
+            650: {
                 items: 2,
                 loop: !0,
             },
