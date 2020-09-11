@@ -20,7 +20,7 @@ module.exports = function serve(cb) {
       notify: false,
       open: true,
       cors: true,
-      // tunnel: true,
+      tunnel: true,
     }),
       gulp.watch(
         "src/img/*.{gif,png,jpg,svg,webp}",
